@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 게시글 제목 입력란 -->
+    <EditText
+        android:id="@+id/editTextTitleNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목을 입력하세요"
+        android:padding="16dp" />
+
+    <!-- 게시글 내용 입력란 -->
+    <EditText
+        android:id="@+id/editTextContentNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTitleNotice"
+        android:layout_marginTop="16dp"
+        android:hint="내용을 입력하세요"
+        android:minLines="5"
+        android:padding="16dp" />
+
+    <!-- 수정 완료 버튼 -->
+    <Button
+        android:id="@+id/buttonSaveNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContentNotice"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="수정 완료" />
+
+    <!-- 수정 취소 버튼 -->
+    <Button
+        android:id="@+id/buttonCancelNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContentNotice"
+        android:layout_toStartOf="@id/buttonSaveNotice"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="수정 취소" />
+
+</RelativeLayout>

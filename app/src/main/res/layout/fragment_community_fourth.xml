@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 게시글 목록을 표시하는 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewReviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonNewPost" />
+
+    <!-- 새로운 리뷰 작성 버튼 -->
+    <Button
+        android:id="@+id/buttonNewPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="리뷰 작성" />
+
+    <!-- Fragment 전환을 위한 FrameLayout (사용하지 않는다면 삭제해도 됨) -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recyclerViewReviews"
+        android:visibility="gone" />
+
+</RelativeLayout>

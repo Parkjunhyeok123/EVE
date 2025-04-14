@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/statNm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="충전소명"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/favorite_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/off_star"
+            android:contentDescription="즐겨찾기 버튼" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주소" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시" />
+
+    <TextView
+        android:id="@+id/province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="도" />
+
+    <!-- New Navigate Button -->
+    <TextView
+        android:id="@+id/limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이용가능여부"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/navigateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Navigate"
+        android:textSize="16sp" />
+</LinearLayout>

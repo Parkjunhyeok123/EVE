@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 충전소 이름 필드 -->
+    <EditText
+        android:id="@+id/review_station_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="충전소 이름"
+        android:inputType="text"
+        android:enabled="false"
+        android:focusable="false" />
+
+    <!-- 리뷰 제목 필드, 최대 50자 제한 -->
+    <EditText
+        android:id="@+id/review_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="리뷰 제목"
+        android:inputType="text"
+        android:maxLength="50" />
+
+    <!-- 리뷰 내용 필드, 최대 3번의 줄바꿈과 100자 제한 -->
+    <EditText
+        android:id="@+id/review_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="리뷰 내용"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:lines="3"
+        android:scrollbars="vertical"
+        android:maxLines="3"
+        android:overScrollMode="ifContentScrolls" />
+
+    <!-- 테스트용 버튼 -->
+    <Button
+        android:id="@+id/test_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="테스트용 버튼"
+        android:layout_marginTop="16dp" />
+
+    <!-- 리뷰 제출 버튼 -->
+    <Button
+        android:id="@+id/submit_review_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="리뷰 제출"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

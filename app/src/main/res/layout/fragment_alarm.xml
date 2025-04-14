@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    android:gravity="center">
+
+    <!-- 제목 -->
+
+    <!-- TimePicker 크기 조정 -->
+    <TextView
+        android:id="@+id/timerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="타이머"
+        android:textColor="#333"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2.0"
+        android:scaleY="2.0"
+        android:timePickerMode="spinner"
+        android:layout_marginBottom="32dp" />
+
+    <!-- 남은 시간 텍스트 크기 조정 -->
+    <TextView
+        android:id="@+id/timerStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00 : 00 : 00"
+        android:textSize="48sp"
+        android:textColor="#555"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <!-- 타이머 시작/정지 버튼 크기 및 텍스트 크기 조정 -->
+    <Button
+        android:id="@+id/timerButton"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:text=" 시작 "
+        android:textSize="22sp"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFF"
+        android:layout_marginTop="16dp"
+        android:padding="18dp"
+        android:elevation="6dp" />
+
+    <!-- 타이머 완료 텍스트 -->
+    <TextView
+        android:id="@+id/timerFinished"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="타이머 종료"
+        android:textSize="24sp"
+        android:textColor="#555"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+
+
+</LinearLayout>

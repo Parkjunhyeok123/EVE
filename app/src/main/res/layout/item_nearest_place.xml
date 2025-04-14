@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/statNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="충전소명"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주소" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="시" />
+
+    <TextView
+        android:id="@+id/province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="도" />
+
+    <!-- 필요에 따라 Navigate 버튼을 추가할 수 있습니다 -->
+    <Button
+        android:id="@+id/navigateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Navigate"
+        android:textSize="16sp" />
+</LinearLayout>

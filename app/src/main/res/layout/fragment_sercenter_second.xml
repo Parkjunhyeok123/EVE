@@ -1,0 +1,28 @@
+<!-- res/layout/dialog_chat.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/dialog_background">
+
+    <Button
+        android:id="@+id/button_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="채팅 상담하기"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:background="@drawable/button_background"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/text_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="채팅 상담은 카카오톡 플러스 친구를 통해 제공됩니다."
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+</LinearLayout>

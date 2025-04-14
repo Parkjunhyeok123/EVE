@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.company.eve.ui.home.kotlintest.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_homeFragment_to_mypageThirdFragment"
+            app:destination="@id/nav_mypage_third" />
+        <action
+            android:id="@+id/action_homeFragment_to_alarmFragment"
+            app:destination="@id/nav_alarm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_community"
+        android:name="com.company.eve.ui.community.CommunityFragment"
+        android:label="@string/menu_community"
+        tools:layout="@layout/fragment_community" />
+
+    <fragment
+        android:id="@+id/nav_sercenter"
+        android:name="com.company.eve.ui.sercenter.SercenterFragment"
+        android:label="@string/menu_sercenter"
+        tools:layout="@layout/fragment_sercenter" />
+
+    <fragment
+        android:id="@+id/nav_option"
+        android:name="com.company.eve.ui.option.OptionFragment"
+        android:label="@string/menu_option"
+        tools:layout="@layout/fragment_option" />
+
+    <fragment
+        android:id="@+id/nav_mypage"
+        android:name="com.company.eve.ui.mypage.MypageFragment"
+        android:label="@string/menu_mypage"
+        tools:layout="@layout/fragment_mypage" />
+
+    <fragment
+        android:id="@+id/nav_option_third"
+        android:name="com.company.eve.ui.option.OptionThirdFragment"
+        android:label="OptionThirdFragment"
+        tools:layout="@layout/fragment_option_third" />
+
+    <fragment
+        android:id="@+id/nav_mypage_third"
+        android:name="com.company.eve.ui.mypage.MypageThirdFragment"
+        android:label="이용내역"
+        tools:layout="@layout/fragment_mypage_third" />
+
+    <fragment
+        android:id="@+id/nav_alarm"
+        android:name="com.company.eve.ui.alarm.AlarmFragment"
+        android:label="알람"
+        tools:layout="@layout/fragment_alarm" />
+</navigation>

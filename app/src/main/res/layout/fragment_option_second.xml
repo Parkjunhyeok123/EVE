@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버전 정보가 여기에 표시됩니다."
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="새 버전 입력"/>
+
+    <Button
+        android:id="@+id/buttonUpdateVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버전 업데이트"/>
+</LinearLayout>

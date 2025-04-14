@@ -1,0 +1,20 @@
+<!-- res/layout/fragment_option_third.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <Switch
+        android:id="@+id/switch_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="공지사항 알람       "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:thumbTint="@color/thumb_color"
+        android:trackTint="@color/track_color"
+        android:layout_gravity="top|left"/>
+</LinearLayout>

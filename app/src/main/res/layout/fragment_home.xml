@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 지도 Fragment 추가 -->
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- TextView 추가, visibility를 gone으로 설정 -->
+    <TextView
+        android:id="@+id/textViewHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="빠른길찾기"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <!-- SearchView 수정: androidx.appcompat.widget.SearchView 사용 -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:queryHint="검색할 주소를 입력하세요"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"/>
+
+    <!-- ListView 추가 (검색 결과) -->
+    <ListView
+        android:id="@+id/searchResultsListView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <!-- Button 추가 -->
+    <Button
+        android:id="@+id/btn_find_shortest_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="빠른길찾기"
+        android:enabled="false"
+        app:layout_constraintTop_toBottomOf="@id/searchResultsListView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_margin="16dp"/>
+
+    <!-- ListView 추가 (가장 가까운 충전소) -->
+    <ListView
+        android:id="@+id/nearestChargersListView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <!-- BottomNavigationView 추가 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="?android:attr/windowBackground"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
